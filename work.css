@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+
+}
+section{
+    width:100%;
+    position: relative;
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    overflow-x: hidden;
+    background:url(images/pexel\ 7.jpg);
+    background-size: cover;
+    justify-content:center;
+    flex-direction:column;
+}
+section::before{
+    content: '';
+    position:absolute;
+    top:50%;
+    right:100px;
+    transform:translateY(-50%);
+    width:300px;
+    height:300px;
+    border-radius: 50%;
+    background: transparent;
+    transition:1s;
+}
+section.active::before{
+    box-shadow: 0 0 0 1200px #1ea8de;
+}
+header{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:30px 100px;
+}
+header .logo{
+    font-size:1.5em;
+    color:#fff;
+    letter-spacing: 2px;
+    font-weight:600;
+    text-decoration:none;
+    transition:0.5s;
+    transform-origin: right;
+}
+header .toggle{
+    background:url(images/menu.png);
+    position: relative;
+    width:30px;
+    height:30px;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 30px;
+    cursor:pointer;
+}
+header .toggle.active{
+    background:url(images/close.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 25px;
+}
+.banner.active .content .mxw800p,
+.banner.active .services .box,
+.banner.active .content,
+.banner.active .logo{
+    transform: scale(0);
+    transform-origin: left;
+    transition: 0s;
+    
+}
+.menu{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left:100px;
+    transition: 0.5s;
+    z-index:2;
+    visibility: hidden;
+    opacity:0;
+}
+.banner.active .menu{
+    visibility: visible;
+    opacity:1; 
+    background:#1ea8de;
+    
+}
+.menu li{
+    list-style: none;
+}
+.menu li a{
+    color:#08381b;
+    text-decoration: none;
+    font-size:1.5em;
+    display: inline-block;
+    padding:5px 10px;
+    margin:5px 0;
+    transition:0.2s ease-in-out;
+}
+.menu li a:hover{
+    letter-spacing: 3px;
+    background: #fff;
+    color:#161a23;
+    border-radius:15px;
+    transition: 0.2s ease-in-out;
+}
+.sec{
+    /* background:#fff; */
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding:100px;
+    min-height:100vh;
+}
+.sec .content{
+    position:relative;
+    width:100%;
+    text-align:center;
+
+}
+.mxw800p{
+    max-width: 800px;
+    margin:0 auto;
+}
+h3{
+    font-size:40px;
+    font-weight: 500;
+    margin-bottom:10px;
+}
+h4{
+    font-size:20px;
+    font-weight: 400;
+    margin-top:7px;
+    
+}
+p{
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight:400;
+    letter-spacing: 1px;
+
+}
+.workBx{
+    position: relative;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap:30px;
+    max-width:100%;
+    margin-top:40px;
+
+}
+.workBx .brand{
+    position:relative;
+    background: #7093fd;
+    min-height:300px;
+    width:250px;
+    margin:0 auto;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+
+}
+.workBx .brand a img{
+    width:200px;
+}
+.workBx .brand:hover{
+    background:#000;
+}
+.workBx .brand a{
+    text-decoration: none;
+    color:rgba(255,255,255, 0.4);
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    font-size:14px;
+
+}
+.workBx .brand:hover a{
+    color:rgba(255,255,255, 1);
+}
+@media(max-width: 992px){
+    section::before{
+        opacity: 0;
+    }
+    
+    .toggle{
+        display:block;
+        height:30px;
+        width:30px;
+        position:relative;
+        cursor:pointer;
+    }
+    .workBx {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+        grid-gap: 30px;
+        max-width: 100%;
+        margin-top: 40px;
+    }
+    .workBx .brand a img {
+        width: 150px;
+        padding-top: 10px;
+    }
+    header{
+        padding: 9px 40px;
+    }
+.banner {
+    background-position: center;
+}
+
+.banner h2 {
+    padding: 0 30px;
+    font-size: 25px;
+    text-transform: none;
+}
+.banner.active .menu{
+    background:#21283a ;
+}
+
+.sec {
+    padding: 100px 50px 50px 50px;
+}
+
+.services .box {
+    width: 100%;
+}
+
+.menu {
+    align-items: center;
+    padding-left: 0;
+}
+
+.menu li a {
+    color: #fff;
+}
+}

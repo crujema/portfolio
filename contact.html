@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get in Touch</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <section class="banner">
+        <header>
+            <a href="#" class="logo">Portfolio</a>
+            <div class="toggle"></div>
+        </header>
+    
+    <section class="contact">
+        <div class="content">
+            <h2>Let's Work Together</h2>
+            <p> Contact me today! <br> I will meet with you to discuss your needs, ideas and start the creative process.</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><img src="images/icons8-phone-24.png"></div>
+                    <div class="text">
+                        <h3>Phone No.</h3>
+                        <p>+254-705-114-344</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><img src="images/icons8-circled-envelope-30.png">
+                    </div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>crujema@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form action="https://formspree.io/f/xayzwqle"
+  method="POST">
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="Name" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="Email" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="Phone" required="required">
+                        <span>Phone Number</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="Details" required="required"></textarea>
+                        <span>Enter Project Details....</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </section>
+</section>
+    <script>
+        const toggle = document.querySelector('.toggle');
+        const banner = document.querySelector('.banner');
+        toggle.onclick = function(){
+            toggle.classList.toggle('active');
+            banner.classList.toggle('active');
+        }
+        
+    </script>
+</body>
+</html>

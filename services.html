@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+    <section class="banner">
+        <header>
+            <a href="#" class="logo">Portfolio</a>
+            <div class="toggle"></div>
+        </header>
+        <!--Services-->
+        <section class="sec about" id="services">
+            <div class="content">
+                <div class="mxw800p">
+                    <h3>Services</h3>
+                    <p>I strive for two things in design: simplicity and clarity. Great design is born of those two things.</p>
+                </div>
+                <div class="services">
+                    <div class="box">
+                        <div class="iconBx">
+                            <img src="images/icons8-web-icon.png">
+                        </div>
+                        <div class="content">
+                            <h2>Graphic Design</h2>
+                            <p>I create the visual versions of brands, messages and communications. I help people and
+                                businesses get their messages across in ways that are effective, and aesthetically pleasing.
+                                I work with clients to help translate their goals and ideas into design concepts.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="iconBx">
+                            <img src="images/icons8-web-page.png">
+                        </div>
+                        <div class="content">
+                            <h2>Web Development</h2>
+                            <p>I offer a variety of website design and development services, from creating mobile web
+                                development solutions and responsive website designs to <br>re-designing existing websites
+                                and web applications to achieve high conversion and adoption rates.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="iconBx">
+                            <img src="images/icons8-video-editing.png">
+                        </div>
+                        <div class="content">
+                            <h2>Video Editing </h2>
+                            <p>I offer a solid range of video editing services which include , the review and refinement of
+                                video and special effects for motion graphics, television, or online video, thumbnails, end
+                                screen animations, and digital content for social media platforms.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </section>
+    <script>
+        const toggle = document.querySelector('.toggle');
+        const banner = document.querySelector('.banner');
+        toggle.onclick = function(){
+            toggle.classList.toggle('active');
+            banner.classList.toggle('active');
+        }
+        
+    </script>
+
+</body>
+</html>
